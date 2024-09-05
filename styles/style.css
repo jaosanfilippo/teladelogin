@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #697565 50%, #1E201E 50%);
+}
+
+.loginacesso{
+    display: flex;
+}
+
+.primario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color:#1E201E;
+    align-items: center;
+}
+
+.titulo__primario{
+    padding: 56px 80px 0 80px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 42px;
+    margin-right: 225px;
+}
+
+.imagem__primario{
+    width: 850px;
+    animation: float 5s ease-in-out infinite;
+    display: flex;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    
+}
+
+.secundario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    gap: 60px;
+    color: #697565;
+}
+
+.titulo__secundario{
+    padding: 56px 80px 0 80px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 42px;
+    color: #ECDFCC;
+}
+
+.lista__secundario{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    margin-top: 21px;
+}
+
+.alternative{
+    display: flex;
+    position: relative;
+    padding: 0 20px;
+    margin-top: 40px;
+    font-family: 'Inter',sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    color: #ECDFCC;
+}
+
+.alternative::before,
+.alternative::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 150px;
+    height: 1px;
+    background-color:#697565;
+    transform: translateY(-50%);
+}    
+
+.alternative::before{
+    left: 0;
+}
+
+.alternative::after{
+    right: 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    color: #ECDFCC;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.formulario__botao{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: #697565;
+    color:#ECDFCC;
+    border-radius: 32px;
+    padding: 8px 26px;
+    border: 1px solid #697565;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 4rem;
+    border: none;
+
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main form input{
+    width: 400px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    background-color: #697565;
+    color: #ECDFCC;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #697565
+}
+
+.social__icons{
+    margin: 20px 0;
+    justify-content: center;
+}
+
+
+.social__icons a{
+    border: 1px solid #ECDFCC;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+}
+
+.nome__formulario{
+    display: flex;
+}
+
+
+
+
+
+
+
+
